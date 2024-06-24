@@ -1,0 +1,21 @@
+# event is an array of tables
+# date: datetime for the date of the event
+# name: name of the event
+
+# Description? Maybe next time.
+
+[[event]]
+date = 2024-06-13T18:30:00
+name = "SVNA General Meeting 🌮"
+
+[[event]]
+date = 2024-08-03T09:30:00
+name = "August Coffee Klatsch ☕"
+
+[[event]]
+date = 2024-07-04T16:00:00
+name = "July 4th Hotdog Time 🌭"
+
+[[event]]
+date = 2024-06-01T09:00:00
+name = "June Coffee Klatsch ☕"

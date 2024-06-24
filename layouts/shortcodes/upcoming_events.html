@@ -1,0 +1,17 @@
+{{ range $allEvents := .Site.Data.upcoming_events }}
+  <div></div>
+  <section class="px-4 py-2 mt-9 bg-neutral-700">
+    <h2 class="my-0">Upcoming Events!</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {{ range sort $allEvents ".date" "asc" }}
+        {{ if ge (time .date).Unix now.Unix }}
+          <h3 class="mb-1 mt-4 col-span-1 content-end">{{ .name }}</h3>
+          <span class=" col-span-1 content-end text-right">
+            {{ .date | time.Format ":date_long" }} at
+            {{ .date | time.Format ":time_short" }}
+          </span>
+        {{ end }}
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
